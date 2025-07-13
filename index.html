@@ -4,17 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가로 보기 테스트</title>
+    <title>가로 보기 반응형 테스트</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f2f2f2;
+            font-family: sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
             text-align: center;
-        }
-
-        h1 {
-            color: #333;
         }
 
         .button-group {
@@ -22,20 +18,23 @@
             justify-content: center;
             gap: 12px;
             flex-wrap: wrap;
-            margin-top: 20px;
         }
 
         .button-group a {
-            padding: 14px 24px;
+            text-decoration: none;
+            padding: 12px 18px;
             background-color: #007BFF;
             color: white;
-            text-decoration: none;
             border-radius: 8px;
-            font-weight: bold;
-            min-width: 140px;
+            min-width: 100px;
+            transition: background-color 0.3s;
         }
 
-        @media (max-width: 768px) {
+        .button-group a:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 600px) {
             .button-group {
                 flex-direction: column;
                 align-items: center;
@@ -43,17 +42,18 @@
 
             .button-group a {
                 width: 80%;
+                margin-bottom: 10px;
             }
         }
     </style>
 </head>
 <body>
-    <h1>📱 가로 보기 테스트 페이지</h1>
-    <p>휴대폰을 가로로 돌려 레이아웃을 확인하세요.</p>
+    <h2>📱 가로 보기 반응형 버튼 테스트</h2>
     <div class="button-group">
-        <a href="#">예비 모의고사</a>
-        <a href="#">실전 모의고사</a>
-        <a href="#">기출문제</a>
+        <a href="#">버튼 1</a>
+        <a href="#">버튼 2</a>
+        <a href="#">버튼 3</a>
     </div>
+    <p style="margin-top: 30px; color: #666;">가로로 돌렸을 때 버튼 정렬 변화를 확인해보세요.</p>
 </body>
 </html>
