@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가로 보기 테스트</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .button-group a {
+            padding: 14px 24px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            min-width: 140px;
+        }
+
+        @media (max-width: 768px) {
+            .button-group {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .button-group a {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>📱 가로 보기 테스트 페이지</h1>
+    <p>휴대폰을 가로로 돌려 레이아웃을 확인하세요.</p>
+    <div class="button-group">
+        <a href="#">예비 모의고사</a>
+        <a href="#">실전 모의고사</a>
+        <a href="#">기출문제</a>
+    </div>
+</body>
+</html>
